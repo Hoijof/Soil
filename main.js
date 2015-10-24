@@ -1,9 +1,14 @@
+
 function main() {
     "use strict";
 
-    var npc = new Npc();
-    npc.sayHi();
-}
+    var npcs = new NpcManager();
 
+    for (var i = 0; i < 30; i++) {
+        npcs.createNpc();
+    }
+
+    npcs.sayHi();
+}
 
 main();

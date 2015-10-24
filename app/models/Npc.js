@@ -1,7 +1,7 @@
 function Npc(id) {
     "use strict";
 
-    this.id = id || -1;
+    this.id = id;
     this.stats = new Stats();
     this.vitals = new Vitals();
     this.skills = [];
