@@ -10,6 +10,10 @@ function Npc(id) {
     this.items = [];
 }
 
+Npc.prototype.passTurn = function () {
+    this.status;
+};
+
 Npc.prototype.sayHi = function () {
     "use strict";
 
