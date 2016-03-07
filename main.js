@@ -1,5 +1,4 @@
-
-function main() {
+(function main() {
     "use strict";
 
     var npcs = new NpcManager();
@@ -9,6 +8,5 @@ function main() {
     }
 
     npcs.sayHi();
-}
+})();
 
-main();
