@@ -1,0 +1,26 @@
+{
+  "name": "hoijof.soil",
+  "version": "2.0.0",
+  "authors": [
+    "Humberto Gómez López <hoijof@gmail.com.com"
+  ],
+  "description": "Generic functions for internal JavaScript projects",
+  "main": "genericFunctions.js",
+  "moduleType": [],
+  "license": "propriatry",
+  "homepage": "humbertogomezlopez.com",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "gradle",
+    "src",
+    "test",
+    "gradlew",
+    "gradlew.bat"
+  ],
+  "dependencies": {
+    "hoijof.genericFunctions": "~2"
+  }
+}

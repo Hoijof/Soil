@@ -13,5 +13,5 @@ function Npc(id) {
 Npc.prototype.sayHi = function () {
     "use strict";
 
-    console.log(`Hi I'm NPC with id ${this.id} and my name is ${this.vitals.name} ${this.vitals.surname}.`);
+    console.log("Hi I'm NPC with id " + this.id + " and my name is " + this.vitals.name + " " + this.vitals.surname);
 };

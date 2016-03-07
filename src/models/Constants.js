@@ -12,5 +12,5 @@ Constants.getShortName = function (name) {
 
     }
 
-    return result !== "" ? result : undefined
+    return result !== "" ? result : undefined;
 };
