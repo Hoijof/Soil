@@ -1,7 +1,8 @@
 var Constants = {
     playerName: "Hoijof",
     playerSurname: "Golpeo",
-    randomExtra: 4
+    randomExtra: 4,
+    stdOutput: $('#stdOutput')
 };
 
 
