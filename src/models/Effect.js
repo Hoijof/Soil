@@ -1,4 +1,5 @@
 function Effect() {
+    "use strict";
     this.name = "Test Name";
     this.duration = 2; // turns
     this.statChanges = [
@@ -20,6 +21,7 @@ function Effect() {
 }
 
 Effect.prototype.apply = function (npc) {
+    "use strict";
     var that = this;
 
     if (duration === 0) return false;
@@ -29,9 +31,9 @@ Effect.prototype.apply = function (npc) {
 
         if (result) {
             result = Engine.modifyStat(npc, statChange.stat, statChange.variation);
-            console.log('Effect ' + that.name + ' applied to ' + npc.vitals.name + ' ' + result)
+            console.log('Effect ' + that.name + ' applied to ' + npc.vitals.name + ' ' + result);
         } else {
-            console.log('Effect ' + that.name + ' failed to apply to ' + npc.vitals.name)
+            console.log('Effect ' + that.name + ' failed to apply to ' + npc.vitals.name);
         }
     });
 

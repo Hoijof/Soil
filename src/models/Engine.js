@@ -1,4 +1,5 @@
 function Engine() {
+    "use strict";
     this.version = '0.0.1';
 }
 
@@ -22,6 +23,8 @@ Engine.modifyStat = function (npc, stat, variation) {
 };
 
 Engine.performAttack = function (npc1, npc2) {
+    "use strict";
+
     if (!npc1.vitals.isAlive) {
         console.log('Npc ' + npc1.vitals.getName() + ' is dead');
         return false;
