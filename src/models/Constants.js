@@ -1,6 +1,7 @@
 var Constants = {
     playerName: "Hoijof",
-    playerSurname: "Golpeo"
+    playerSurname: "Golpeo",
+    randomExtra: 4
 };
 
 

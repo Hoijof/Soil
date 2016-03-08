@@ -1,4 +1,4 @@
-(function main() {
+
     "use strict";
 
     var npcs = new NpcManager();
@@ -7,6 +7,11 @@
         npcs.createNpc();
     }
 
-    npcs.sayHi();
-})();
+    var bs = new BattleSystem(),
+        battle = bs.createBattle(npcs.npcs[0], npcs.npcs[1]);
+
+    battle = bs.battles[battle];
+
+    battle.passTurn();
+
 
