@@ -17,5 +17,5 @@
     }
 
     console.log("And the winner is! " + battle.winner.vitals.getName());
-    Constants.stdOutput.html("<h1>And the winner is! " + battle.winner.vitals.getName() + "</h1>");
+    Constants.displayMessage("And the winner is! " + battle.winner.vitals.getName());
 
