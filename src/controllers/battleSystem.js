@@ -16,5 +16,6 @@ BattleSystem.prototype.createBattle = function (npc1, npc2) {
 };
 
 BattleSystem.prototype.finishBattle = function (battleId) {
-    return this.battles[battleId].finish();
+    this.battles[battleId].finish();
+    console.log("Battle finished in " + this.battles[battleId].turns + " turns dealing a totla of " + this.battles[battleId].totalDamage + " damage.");
 };

@@ -12,6 +12,10 @@
 
     battle = bs.battles[battle];
 
-    battle.passTurn();
+    while (battle.onGoing) {
+        battle.passTurn();
+    }
 
+    console.log("And the winner is! " + battle.winner.vitals.getName());
+    document.write("<h1>And the winner is! " + battle.winner.vitals.getName() + "</h1>");
 
