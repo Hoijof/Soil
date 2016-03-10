@@ -1,8 +1,9 @@
 function Vitals() {
     "use strict";
 
-    this.name = Constants.playerName + roll(100);
-    this.surname = Constants.playerSurname;
+    this.sex = isAppening(50) ? 'male' : 'female';
+    this.name = Constants.getRandomCitizenName(this.sex);
+    this.surname = Constants.getRandomCitizenSurname();
     this.age = 25;
     this.nicknames = [];
     this.nicknameId = -1;

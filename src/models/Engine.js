@@ -22,7 +22,7 @@ Engine.modifyStat = function (npc, stat, variation) {
     }
 };
 
-Engine.performAttack = function (npc1, npc2) {
+Engine.performBasicAttack = function (npc1, npc2) {
     "use strict";
 
     if (!npc1.vitals.isAlive) {
