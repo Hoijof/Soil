@@ -72,7 +72,10 @@ Battle.prototype.battleChecks = function () {
 Battle.prototype.attack = function (npc1, npc2) {
     "use strict";
 
-    return Engine.performAttack(npc1, npc2);
+    var result = Engine.performBasicAttack(npc1, npc2);
+
+
+    return result;
 };
 
 Battle.prototype.finish = function () {

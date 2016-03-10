@@ -30,16 +30,14 @@ Engine.performBasicAttack = function (npc1, npc2) {
         return false;
     }
 
+
     console.log(npc1.vitals.getName() + " attacks " + npc2.vitals.getName());
 
     var dmg = parseInt(npc1.stats.strength),
-        extra = getRandomInt(-Constants.randomExtra, Constants.randomExtra),
         def = parseInt(npc2.stats.endurance);
 
-    dmg += extra;
-
-    extra = getRandomInt(-Constants.randomExtra, Constants.randomExtra);
-    def += extra;
+    dmg += getRandomInt(-Constants.randomExtra, Constants.randomExtra);
+    def += getRandomInt(-Constants.randomExtra, Constants.randomExtra);
 
     dmg -= Math.floor(def / 2);
 
